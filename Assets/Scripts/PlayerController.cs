@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
 		else if (GMScript.RewindTimeBool == true && Input.GetKey(RewindKey))
 		{
+			rb.velocity = Vector2.zero;
 			GMScript.RewindTime();
 		}
 
