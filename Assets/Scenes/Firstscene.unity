@@ -176,18 +176,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.11673331}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.7334666}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &63106579
 SpriteRenderer:
@@ -248,8 +248,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63106576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.79, y: -1.93, z: -3.700486}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0.03, y: -2.99, z: -3.700486}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -279,7 +279,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399284188}
   m_Enabled: 1
-  m_CellSize: {x: 0.5, y: 0.5, z: 0}
+  m_CellSize: {x: 1, y: 1, z: 1}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -388,7 +388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647557251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0.47, z: -5.216133}
+  m_LocalPosition: {x: 8.27, y: -0.34, z: -5.216133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1141,11 +1141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7678113724382832620, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.67
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 7678113724382832620, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 7678113724382832620, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1183,6 +1183,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7678113724382832620, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678113724382832620, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daa47c7fcd33bb143a8d4d1aa77cec25, type: 3}
 --- !u!1001 &8066095159135154138
@@ -1192,6 +1200,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8066095159880128202, guid: c5f13e1cdfd16474b8706d5d192a1453, type: 3}
+      propertyPath: m_AssetsPPU
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8066095159880128209, guid: c5f13e1cdfd16474b8706d5d192a1453, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1244,5 +1256,9 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 699306144}
+    - target: {fileID: 8066095159880128215, guid: c5f13e1cdfd16474b8706d5d192a1453, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5f13e1cdfd16474b8706d5d192a1453, type: 3}
