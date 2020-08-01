@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+	public int KeysCollected;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,11 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+	public void CollectedAKey()
+	{
+		KeysCollected++;
+	}
 
 	public void SwitchToNextScene()
 	{
