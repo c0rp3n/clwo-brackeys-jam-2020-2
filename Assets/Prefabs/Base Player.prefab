@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 7678113724382832617}
   - component: {fileID: 7678113724382832619}
   m_Layer: 0
-  m_Name: PlayerObject
+  m_Name: Base Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e778201a77073b4d806904312edc0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 500
+  m_JumpForce: 600
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 7678113724382832595}
-  runSpeed: 80
+  runSpeed: 120
 --- !u!95 &7678113724382832617
 Animator:
   serializedVersion: 3
