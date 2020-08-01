@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
 	public GameObject PointOfRewind;
 	public int NumberofRewindsLeft = 1;
 
+	public Rigidbody2D rb;
+
 	// Start is called before the first frame update
 	void Start()
     {
 		GMScript = GameObject.Find("GameManager").GetComponent<GameManager>();
 		PointOfRewind = GameObject.Find("RewindPoint");
-
+		rb = GetComponent<Rigidbody2D>();
 	}
 
 	// Update is called once per frame
@@ -23,8 +25,19 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyDown(RewindKey))
 		{
 			//RewindFunction();
-			this.GMScript.SwapTime();
+			//this.GMScript.SwapTime();
 		}
+
+		else if (GMScript.RewindTimeBool == true && Input.GetKey(RewindKey))
+		{
+			GMScript.RewindTime();
+		}
+
+		else if (Input.GetKeyUp(RewindKey))
+		{
+			rb.gravityScale = 1;
+		}
+		
 	}
 
 	void RewindFunction()
