@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e778201a77073b4d806904312edc0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 500
+  m_JumpForce: 600
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -573,21 +573,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 699306143}
   runSpeed: 80
---- !u!114 &699306149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699306142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d5ea83163e1fb4db23c162876fdd9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RewindKey: 114
-  PointOfRewind: {fileID: 647557251}
-  NumberofRewindsLeft: 1
 --- !u!95 &699306149
 Animator:
   serializedVersion: 3
