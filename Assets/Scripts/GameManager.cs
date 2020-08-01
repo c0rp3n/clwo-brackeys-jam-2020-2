@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void RewindTime() // This is a terrible way of doing it but it works, say sorry to your own eyes
+	public void RewindTime() // This is a terrible way to implement a: Function that "rewinds" the level by moving left
 	{
 		PlayerTransform = PlayerGameObject.transform.position;
 		PlayerGameObject.transform.Translate(Vector2.left * RewindTimeSpeed);

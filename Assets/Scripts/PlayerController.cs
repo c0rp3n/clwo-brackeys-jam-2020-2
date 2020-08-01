@@ -9,12 +9,13 @@ public class PlayerController : MonoBehaviour
 	public GameObject PointOfRewind;
 	public int NumberofRewindsLeft = 1;
 
-	public Rigidbody2D rb;
+	public Rigidbody2D rb; // Short for Rigid Body
 
 	// Start is called before the first frame update
 	void Start()
     {
-		GMScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+		//Initialization
+		GMScript = GameObject.Find("GameManager").GetComponent<GameManager>(); 
 		PointOfRewind = GameObject.Find("RewindPoint");
 		rb = GetComponent<Rigidbody2D>();
 	}
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
 		
 	}
 
-	void RewindFunction()
+	void RewindFunction() // The first function that resets you back into position
 	{
 		if (NumberofRewindsLeft > 0)
 		{
