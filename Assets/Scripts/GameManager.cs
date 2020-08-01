@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 	public void CollectedAKey()
 	{
 		KeysCollected++;
+		Debug.Log("Keys Collected: " + KeysCollected);
 	}
 
 	public void SwitchToNextScene()

@@ -48,5 +48,15 @@ public class PlayerController : MonoBehaviour
 			GMScript.CollectedAKey();
 			collision.gameObject.SetActive(false);
 		}
+
+		else if (collision.tag == "Door")
+		{
+			Debug.Log("Walked into a door");
+			if(GMScript.KeysCollected >= 1) // Change me later please this is terrible
+			{
+				Debug.Log("In func that changes scenes that is in the player script");
+				GMScript.SwitchToNextScene();
+			}
+		}
 	}
 }
