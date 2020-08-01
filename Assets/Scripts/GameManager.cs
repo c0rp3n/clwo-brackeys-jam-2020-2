@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 	private bool isPast;
 
 	public bool RewindTimeBool = false;
+	public bool TeleportRewindBool = false;
+	public bool SwapTimeBool = false;
 	public GameObject PlayerGameObject;
 	public float RewindTimeSpeed;
 	private Vector2 PlayerTransform;

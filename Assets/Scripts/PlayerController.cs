@@ -23,10 +23,13 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		if (Input.GetKeyDown(RewindKey))
+		if (Input.GetKeyDown(RewindKey) && GMScript.TeleportRewindBool == true)
 		{
-			//RewindFunction();
-			//this.GMScript.SwapTime();
+			TeleportRewindFunction();
+		}
+		else if (Input.GetKeyDown(RewindKey) && GMScript.SwapTimeBool == true)
+		{
+			this.GMScript.SwapTime();
 		}
 
 		else if (GMScript.RewindTimeBool == true && Input.GetKey(RewindKey))
@@ -42,7 +45,7 @@ public class PlayerController : MonoBehaviour
 		
 	}
 
-	void RewindFunction() // The first function that resets you back into position
+	void TeleportRewindFunction() // The first function that resets you back into position
 	{
 		if (NumberofRewindsLeft > 0)
 		{

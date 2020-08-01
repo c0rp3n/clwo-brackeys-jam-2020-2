@@ -1867,6 +1867,10 @@ PrefabInstance:
       propertyPath: m_Present
       value: 
       objectReference: {fileID: 1831247816}
+    - target: {fileID: 3242332501797421732, guid: f8d1c24c2cfd9074ba4ac742d0de3bc7, type: 3}
+      propertyPath: TeleportRewindBool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3242332501797421733, guid: f8d1c24c2cfd9074ba4ac742d0de3bc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.13716453
