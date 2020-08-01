@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     {
 		if (Input.GetKeyDown(RewindKey))
 		{
-			RewindFunction();
+			//RewindFunction();
+			this.GMScript.SwapTime();
 		}
 	}
 
