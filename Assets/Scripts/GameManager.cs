@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
 	public void CollectedAKey()
 	{
 		KeysCollected++;
-		Debug.Log("Keys Collected: " + KeysCollected);
 	}
 
 	public void SwapTime()
@@ -52,6 +51,10 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void ResetLevel()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
 	public void RewindTime() // This is a terrible way to implement a: Function that "rewinds" the level by moving left
 	{
 		PlayerTransform = PlayerGameObject.transform.position;

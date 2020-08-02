@@ -49,7 +49,6 @@ public class PlayerController : MonoBehaviour
 	{
 		if (NumberofRewindsLeft > 0)
 		{
-			Debug.Log("Rewound from: " + gameObject.transform.position + "To: " + PointOfRewind.transform.position);
 			gameObject.transform.position = PointOfRewind.transform.position;
 			NumberofRewindsLeft--;
 		}
@@ -63,19 +62,18 @@ public class PlayerController : MonoBehaviour
 	{
 		if(collision.tag == "Key")
 		{
-			Debug.Log("Found a key!");
 			GMScript.CollectedAKey();
 			collision.gameObject.SetActive(false);
 		}
 
-		else if (collision.tag == "Door")
+		else if (collision.tag == "Door" && GMScript.KeysCollected >= 1)
 		{
-			Debug.Log("Walked into a door");
-			if(GMScript.KeysCollected >= 1) // Change me later please this is terrible
-			{
-				Debug.Log("In func that changes scenes that is in the player script");
-				GMScript.SwitchToNextScene();
-			}
+			GMScript.SwitchToNextScene();
+		}
+
+		else
+		{
+			Debug.Log("Collided with: " + collision.tag);
 		}
 	}
 }
