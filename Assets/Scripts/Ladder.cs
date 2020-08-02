@@ -23,12 +23,12 @@ public class Ladder : MonoBehaviour
         // @TODO dont hardcode these keys
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.UpArrow))
             {
                 other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, m_Speed);
  
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
                 other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -m_Speed);
             }
