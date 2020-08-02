@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
 		else if (Input.GetKeyUp(RewindKey))
 		{
-			rb.gravityScale = 1;
+			rb.gravityScale = 5;
 		}
 		
 	}
