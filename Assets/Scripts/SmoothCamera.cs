@@ -14,6 +14,7 @@ public class SmoothCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		m_Target = GameObject.Find("PlayerObject").transform; //So it automatically finds player transform
         this.m_Transform = GetComponent<Transform>();
     }
 
