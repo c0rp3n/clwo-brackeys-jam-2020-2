@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 	public GameObject PointOfRewind;
 	public int NumberofRewindsLeft = 1;
 
+	public KeyCode SetPointOfRewind = KeyCode.N;
+
 	public Rigidbody2D rb; // Short for Rigid Body
 
 	// Start is called before the first frame update
@@ -32,11 +34,18 @@ public class PlayerController : MonoBehaviour
 			this.GMScript.SwapTime();
 		}
 
+		else if (GMScript.RewindTimeBool == true && Input.GetKey(SetPointOfRewind))
+		{
+			PointOfRewind.transform.position = this.transform.position;
+		}
+
+
 		else if (GMScript.RewindTimeBool == true && Input.GetKey(RewindKey))
 		{
 			rb.velocity = Vector2.zero;
 			GMScript.RewindTime();
 		}
+
 
 		else if (Input.GetKeyUp(RewindKey))
 		{
